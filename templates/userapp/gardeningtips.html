@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gardening Tips</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background: #6ab04c;
+            color: black#fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #6ab04c;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Virtual Gardening Assistant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light" href="{% url 'userapp:userhomepage' %}">Back To User Home Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light" href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Gardening Tips</h1>
+    </header>
+    <section>
+        <h2>General Gardening Tips</h2>
+        <ul>
+            <li><strong>Watering Tips:</strong>
+                <ul>
+                    <li>Water plants early in the morning or late in the afternoon to minimize evaporation.</li>
+                    <li>Use a consistent watering schedule based on the plant's needs and the season.</li>
+                </ul>
+            </li>
+            <li><strong>Soil Care:</strong>
+                <ul>
+                    <li>Regularly aerate soil to ensure proper oxygen flow to the roots.</li>
+                    <li>Test soil pH and nutrient levels, and amend it with compost or organic matter as needed.</li>
+                </ul>
+            </li>
+            <li><strong>Sunlight Requirements:</strong>
+                <ul>
+                    <li>Ensure plants get the right amount of sunlight (e.g., full sun, partial shade, or shade-loving plants).</li>
+                    <li>Rotate potted plants occasionally to promote even growth.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Specific Plant Care</h2>
+        <ul>
+            <li><strong>Fruits and Vegetables:</strong>
+                <ul>
+                    <li>Use companion planting to repel pests and improve yields (e.g., basil with tomatoes).</li>
+                    <li>Regularly prune and stake plants like tomatoes to prevent diseases.</li>
+                </ul>
+            </li>
+            <li><strong>Herbs:</strong>
+                <ul>
+                    <li>Harvest herbs frequently to encourage new growth.</li>
+                    <li>Keep herbs like mint in pots to prevent them from spreading uncontrollably.</li>
+                </ul>
+            </li>
+            <li><strong>Indoor Plants:</strong>
+                <ul>
+                    <li>Wipe leaves of indoor plants to remove dust and enhance photosynthesis.</li>
+                    <li>Ensure proper drainage to avoid root rot.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Seasonal Gardening Tips</h2>
+        <ul>
+            <li><strong>Spring:</strong> Focus on planting seeds and young plants. Add mulch to retain moisture.</li>
+            <li><strong>Summer:</strong> Water deeply and regularly. Use shade nets for heat-sensitive plants.</li>
+            <li><strong>Autumn:</strong> Prune and clean up dead plant material to prepare for winter.</li>
+            <li><strong>Winter:</strong> Protect plants from frost using covers. Water sparingly as growth slows.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Pest and Disease Management</h2>
+        <ul>
+            <li><strong>Natural Pest Control:</strong>
+                <ul>
+                    <li>Use neem oil spray or soap water for common pests like aphids and spider mites.</li>
+                    <li>Attract beneficial insects like ladybugs by planting flowers like marigolds.</li>
+                </ul>
+            </li>
+            <li><strong>Disease Prevention:</strong>
+                <ul>
+                    <li>Avoid overwatering to prevent fungal diseases.</li>
+                    <li>Use crop rotation in vegetable gardens to reduce soil-borne diseases.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Gardening Tools and Maintenance</h2>
+        <ul>
+            <li><strong>Basic Tools:</strong>
+                <ul>
+                    <li>Recommend tools like pruners, gloves, and trowels for beginners.</li>
+                    <li>Regularly clean and sharpen tools to maintain efficiency.</li>
+                </ul>
+            </li>
+            <li><strong>Composting:</strong>
+                <ul>
+                    <li>Encourage composting kitchen scraps and garden waste for nutrient-rich soil.</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

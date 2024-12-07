@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home - Virtual Gardening Assistant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<center>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Virtual Gardening Assistant</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#overview">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light" href="/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-success text-white text-center py-5">
+        <h1>Welcome, Gardener {{ user.first_name }} {{ user.last_name }}!</h1>
+        <p>Manage and guide your gardening tasks effortlessly, access resources, and explore gardening insights.</p>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>As a user, the Virtual Gardening Assistant helps you track gardening tasks, access resources, and get expert advice. Monitor your progress, share tips, and improve your gardening skills.</p>
+        </section>
+
+        <section class="info-section" id="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Track and manage your gardening tasks.</li>
+                <li>Monitor plant progress and get insights for improvement.</li>
+                <li>Access and share expert gardening tips with others.</li>
+                <li>Receive personalized gardening recommendations based on your needs.</li>
+                <li>Contact support for any gardening-related issues or queries.</li>
+            </ul>
+        </section>
+
+        <section class="resources" id="resources">
+            <h2>User Resources</h2>
+            <ul>
+                <li>Access guides and helpful resources for gardening.</li>
+                <li>Download tools and tips to improve your gardening skills.</li>
+                <li>Stay up to date with the latest gardening techniques and trends.</li>
+            </ul>
+        </section>
+
+        <section class="testimonial">
+            <h2>User Testimonials</h2>
+            <p>"This app has made it easier for me to track my gardening tasks and improve my skills." - Sarah L., Gardening Enthusiast</p>
+            <p>"I love how I can monitor my plants' progress and get timely suggestions. It's been a game-changer!" - James P., Gardening Hobbyist</p>
+        </section>
+
+        <section class="additional-info">
+            <h2>Gardening Insights</h2>
+            <ul>
+                <li>Gardening can improve both mental and physical well-being.</li>
+                <li>Using organic methods can help enhance plant health and soil quality.</li>
+                <li>Incorporating diverse plant species supports sustainable gardening.</li>
+            </ul>
+        </section>
+
+        <div class="button-group">
+            <a href="{% url 'userapp:add_task' %}" class="btn btn-success">Manage Your Tasks</a>
+            <a href="{% url 'userapp:gardeningtips' %}" class="btn btn-success">Gardening Tips</a>
+            <a href="{% url 'userapp:contactsupport' %}" class="btn btn-success">Contact Support</a>
+            <a href="{% url 'userapp:gardeningplanning' %}" class="btn btn-success">Garden Planning</a>
+        </div>
+    </main>
+
+    <footer class="bg-success text-white text-center py-3">
+        <p>&copy; 2024 Virtual Gardening Assistant. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</center>
+</html>
